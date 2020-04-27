@@ -1,0 +1,9 @@
+<template>
+    <template for:each={videos} for:item="video">
+        <my-videoitem
+            key={video.id.videoId}
+            eachvideo={video}
+            onvideoselected={videoselected}
+        ></my-videoitem>
+    </template>
+</template>

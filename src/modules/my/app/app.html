@@ -1,0 +1,31 @@
+<template>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <img src="youtube.jpg" />
+            </div>
+            <div class="col-sm-10">
+                <my-searchbar
+                    onchangesearchterm={searchTermChange}
+                ></my-searchbar>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10">
+                <template if:true={renderVideoDetails}>
+                    <my-videodetails
+                        selectedvideo={selectedVideo}
+                    ></my-videodetails>
+                </template>
+            </div>
+            <div class="col-sm-2">
+                <template if:true={renderVideoDetails}>
+                    <my-videolist
+                        videos={videos}
+                        onnewvideoselected={handlevideoselected}
+                    ></my-videolist>
+                </template>
+            </div>
+        </div>
+    </div>
+</template>

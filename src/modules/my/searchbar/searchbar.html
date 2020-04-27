@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <form onsubmit={doFormSubmit}>
+            <input
+                type="text"
+                style="margin-top: 2%;"
+                placeholder="Search.."
+                class="form-control"
+                value={searchTerm}
+                onchange={searchTermChanged}
+                onkeyup={searchTermChanged}
+            />
+        </form>
+    </div>
+</template>

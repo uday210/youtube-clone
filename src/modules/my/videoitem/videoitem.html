@@ -1,0 +1,14 @@
+<template>
+    <div
+        class="card"
+        style="margin: 10px; cursor: pointer;"
+        onclick={videoselected}
+    >
+        <img
+            style="margin-right: '20px';"
+            alt="video"
+            src={eachvideo.snippet.thumbnails.default.url}
+        />
+        <p class="card-text">{eachvideo.snippet.title}</p>
+    </div>
+</template>
