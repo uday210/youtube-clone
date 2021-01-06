@@ -6,7 +6,7 @@
     "bugs": "https://github.com/uday210/my-app/issues",
     "dependencies": {
         "@material-ui/core": "^4.9.11",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "compression": "^1.7.4",
         "express": "^4.17.1",
         "helmet": "^3.22.0"
